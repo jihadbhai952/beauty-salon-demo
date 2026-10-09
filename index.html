@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2b1e25">
+<title>Maison Bloom — Beauty Salon Demo</title>
+<meta name="description" content="A premium, mobile-friendly beauty salon website demo for Dhaka, Bangladesh.">
+<style>
+:root{--ink:#2b1e25;--muted:#76666c;--cream:#fffaf7;--rose:#d98c9b;--rose-dark:#a9576b;--blush:#f5e3e4;--line:#ead9d8;--white:#fff;--gold:#c69b64;--shadow:0 18px 50px rgba(61,35,45,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.demo-ribbon{background:#2b1e25;color:#fff;text-align:center;font-size:12px;letter-spacing:.08em;padding:8px 12px}.demo-ribbon strong{color:#f4bdc8}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Georgia,serif;font-size:25px;letter-spacing:-.04em;font-weight:bold}.brand span{color:var(--rose-dark)}.navlinks{display:flex;gap:26px;font-size:13px;color:#5d4b52}.navlinks a:hover{color:var(--rose-dark)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:999px;background:var(--ink);color:white;border:1px solid var(--ink);font-size:13px;font-weight:650;transition:.2s;cursor:pointer}.nav-cta:hover,.btn:hover{transform:translateY(-2px);background:var(--rose-dark);border-color:var(--rose-dark)}.btn.light{background:transparent;color:var(--ink);border-color:#c9b3b8}.btn.rose{background:var(--rose-dark);border-color:var(--rose-dark)}.hero{display:grid;grid-template-columns:1fr .92fr;gap:50px;align-items:center;padding:45px 0 75px}.eyebrow{color:var(--rose-dark);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:800}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6vw,70px);line-height:1.03;letter-spacing:-.055em;font-weight:500;margin:18px 0}.hero h1 em{font-weight:400;color:var(--rose-dark)}.hero p{max-width:490px;color:var(--muted);font-size:15px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.trust{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted)}.stars{color:var(--gold);letter-spacing:2px}.hero-visual{position:relative;min-height:470px}.hero-photo{position:absolute;inset:0 30px 0 0;border-radius:48% 48% 18px 18px;overflow:hidden;background:var(--blush)}.hero-photo img{width:100%;height:100%;object-fit:cover}.floating-note{position:absolute;right:0;bottom:30px;background:white;border-radius:14px;padding:16px 19px;box-shadow:var(--shadow);max-width:205px;font-size:12px}.floating-note strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:500}.floating-note span{color:var(--muted)}.mini-badge{position:absolute;top:26px;right:0;border-radius:50%;width:86px;height:86px;background:var(--rose-dark);color:white;display:grid;place-items:center;text-align:center;font-family:Georgia,serif;font-size:13px;line-height:1.15;transform:rotate(8deg)}.section{padding:76px 0}.section.soft{background:#f7eeeb}.section-head{text-align:center;max-width:610px;margin:0 auto 38px}.section-head h2{font:500 clamp(32px,4vw,46px)/1.1 Georgia,serif;letter-spacing:-.04em;margin:10px 0 12px}.section-head p{color:var(--muted);font-size:14px;margin:0}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:white;padding:25px 20px;border:1px solid var(--line);border-radius:16px;min-height:190px;transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.service-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--blush);font-size:20px}.service h3{font:500 21px Georgia,serif;margin:17px 0 7px}.service p{color:var(--muted);font-size:12px;margin:0}.service .price{display:block;color:var(--rose-dark);font-size:12px;font-weight:750;margin-top:15px}.gallery{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:210px 210px;gap:14px}.gallery figure{margin:0;border-radius:14px;overflow:hidden;background:var(--blush);position:relative}.gallery figure:first-child{grid-row:span 2}.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.gallery figure:hover img{transform:scale(1.05)}.gallery figcaption{position:absolute;left:12px;bottom:12px;background:#fffdf8e8;padding:7px 11px;border-radius:999px;font-size:11px}.about-grid{display:grid;grid-template-columns:.9fr 1fr;gap:55px;align-items:center}.about-image{height:430px;border-radius:18px;overflow:hidden;background:var(--blush)}.about-image img{width:100%;height:100%;object-fit:cover}.about-copy h2{font:500 clamp(34px,4vw,48px)/1.1 Georgia,serif;letter-spacing:-.04em;margin:12px 0}.about-copy p{font-size:14px;color:var(--muted)}.checklist{list-style:none;padding:0;margin:22px 0}.checklist li{margin:10px 0;font-size:13px}.checklist li:before{content:"✓";color:var(--rose-dark);font-weight:bold;margin-right:10px}.quote{background:white;border:1px solid var(--line);border-radius:18px;padding:27px}.quote p{font:italic 20px/1.5 Georgia,serif;margin:0 0 18px}.quote small{color:var(--muted)}.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.sample-label{display:inline-block;background:#fff0c9;color:#73521b;border-radius:5px;padding:4px 7px;font-size:9px;font-weight:800;letter-spacing:.08em;margin-bottom:12px}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}.booking-copy h2{font:500 42px/1.1 Georgia,serif;margin:12px 0}.booking-copy p{color:var(--muted);font-size:14px}.contact-info{margin-top:25px;display:grid;gap:12px;font-size:13px}.contact-info div{display:flex;gap:10px;align-items:start}.form-card{background:white;border:1px solid var(--line);border-radius:18px;padding:25px;box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:750;color:#65525a}.field input,.field select,.field textarea{width:100%;border:1px solid #e5d5d5;border-radius:9px;background:#fffdfb;padding:12px;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rose-dark)}.field textarea{min-height:82px;resize:vertical}.form-card .btn{width:100%;margin-top:16px}.form-note{font-size:10px;color:var(--muted);margin:10px 0 0}.map-placeholder{margin-top:24px;background:#f0e5e2;border:1px dashed #c9aeb4;border-radius:14px;min-height:130px;display:grid;place-items:center;text-align:center;padding:20px;color:#775e66;font-size:12px}.map-placeholder strong{display:block;font:20px Georgia,serif;margin-bottom:4px}footer{background:var(--ink);color:white;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-row p{font-size:11px;color:#d7c8ce;margin:5px 0}.footer-links{display:flex;gap:16px;font-size:12px;color:#e5d9de}.wa{position:fixed;right:17px;bottom:17px;z-index:5;border:0;border-radius:999px;background:#1b9d69;color:white;padding:13px 17px;box-shadow:0 10px 25px #0002;font-weight:750;font-size:12px;cursor:pointer}.toast{display:none;position:fixed;left:50%;bottom:75px;transform:translateX(-50%);width:min(90%,420px);background:#2b1e25;color:white;border-radius:12px;padding:15px;z-index:10;font-size:13px;box-shadow:var(--shadow)}.toast.show{display:block}
+@media(max-width:800px){.wrap{width:min(100% - 28px,600px)}.nav{height:65px}.navlinks{display:none}.nav-cta{padding:10px 13px;font-size:12px}.hero{grid-template-columns:1fr;gap:26px;padding:30px 0 55px}.hero h1{font-size:49px}.hero-visual{min-height:390px}.hero-photo{right:22px}.section{padding:58px 0}.services{grid-template-columns:repeat(2,1fr);gap:10px}.service{padding:19px 15px;min-height:175px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:190px 150px 150px;gap:10px}.gallery figure:first-child{grid-row:span 2}.gallery figure:last-child{grid-column:span 2}.about-grid,.booking-grid{grid-template-columns:1fr;gap:28px}.about-image{height:320px}.quote-grid{grid-template-columns:1fr}.quote{padding:22px}.booking-copy h2{font-size:38px}.footer-row{align-items:flex-start;flex-direction:column}.form-card{padding:18px}}@media(max-width:390px){.brand{font-size:22px}.hero h1{font-size:42px}.hero-visual{min-height:330px}.services{grid-template-columns:1fr 1fr}.service h3{font-size:18px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.gallery{grid-template-rows:165px 125px 125px}}
+</style>
+</head>
+<body>
+<div class="demo-ribbon">PORTFOLIO PREVIEW <strong>· DEMO ONLY</strong> · SAMPLE BUSINESS DETAILS</div>
+<header class="wrap">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home">maison <span>bloom.</span></a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#about">Our story</a><a href="#contact">Contact</a></div>
+    <a class="nav-cta" href="#booking">Book a visit ↗</a>
+  </nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">Your moment. Your glow.</div>
+    <h1>Beauty that feels<br><em>like you.</em></h1>
+    <p>A little pause, a little pampering, and a look that makes you feel wonderful. Discover thoughtful beauty care in a calm, welcoming space.</p>
+    <div class="hero-actions"><a class="btn" href="#booking">Book an appointment <span>↗</span></a><a class="btn light" href="#services">Explore services</a></div>
+    <div class="trust"><span class="stars">★★★★★</span><span>Sample rating · Replace with verified reviews</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-photo"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Elegant beauty salon interior" onerror="this.style.display='none'"></div>
+    <div class="mini-badge">A little<br>luxury<br>for you</div>
+    <div class="floating-note"><strong>Feel good. Glow more.</strong><span>Personal care, with a softer touch.</span></div>
+  </div>
+</section>
+<section class="section soft" id="services">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">The salon menu</div><h2>Your beauty, your way</h2><p>From everyday refreshes to special-occasion glam, find the service that feels right for you.</p></div>
+    <div class="services">
+      <article class="service"><div class="service-icon">✂</div><h3>Haircut</h3><p>Fresh cuts shaped around your style and personality.</p><span class="price">Sample price · ৳500+</span></article>
+      <article class="service"><div class="service-icon">✧</div><h3>Hair styling</h3><p>Blowouts, curls and polished looks for any plan.</p><span class="price">Sample price · ৳800+</span></article>
+      <article class="service"><div class="service-icon">❋</div><h3>Facial care</h3><p>A relaxing skincare ritual for a refreshed feel.</p><span class="price">Sample price · ৳1,200+</span></article>
+      <article class="service"><div class="service-icon">♡</div><h3>Makeup</h3><p>Soft glam or a statement look for your big day.</p><span class="price">Sample price · ৳2,500+</span></article>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:10px;margin:18px 0 0">All services and prices are placeholders for demonstration.</p>
+  </div>
+</section>
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">A glimpse inside</div><h2>Beauty in the details</h2><p>Use this gallery to showcase your salon space, signature looks and happy clients—with permission.</p></div>
+    <div class="gallery">
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Hair styling in a salon"><figcaption>Hair artistry</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80" alt="Beauty portrait"><figcaption>Everyday glow</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80" alt="Makeup products"><figcaption>Beauty essentials</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d5?auto=format&fit=crop&w=900&q=80" alt="Salon styling station"><figcaption>Your time to unwind</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section soft" id="about">
+  <div class="wrap about-grid">
+    <div class="about-image"><img loading="lazy" src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=80" alt="Beautiful salon interior"></div>
+    <div class="about-copy"><div class="eyebrow">A softer kind of self-care</div><h2>Come as you are.<br>Leave glowing.</h2><p>At Maison Bloom, we believe beauty appointments should feel personal, relaxed and entirely yours. Our demo story highlights the warmth, care and attention a real salon can share with its community.</p><ul class="checklist"><li>Personalised service consultations</li><li>A welcoming, relaxing atmosphere</li><li>Carefully selected beauty services</li></ul><a class="btn" href="#booking">Plan your visit ↗</a></div>
+  </div>
+</section>
+<section class="section" id="reviews">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Kind words</div><h2>Little notes of love</h2><p>Sample testimonials only. Replace these with real, approved customer reviews before launch.</p></div>
+    <div class="quote-grid">
+      <article class="quote"><span class="sample-label">SAMPLE REVIEW</span><p>“Such a calming experience. I left feeling refreshed and confident.”</p><small>— Sample customer</small></article>
+      <article class="quote"><span class="sample-label">SAMPLE REVIEW</span><p>“The attention to detail made the whole visit feel special.”</p><small>— Sample customer</small></article>
+      <article class="quote"><span class="sample-label">SAMPLE REVIEW</span><p>“A lovely space for a little self-care and a fresh new look.”</p><small>— Sample customer</small></article>
+    </div>
+  </div>
+</section>
+<section class="section soft" id="booking">
+  <div class="wrap booking-grid">
+    <div class="booking-copy"><div class="eyebrow">Let's make time for you</div><h2>Your next glow-up starts here.</h2><p>Send an appointment request and the salon can confirm availability. This demo form does not send or store any information yet.</p>
+      <div class="contact-info" id="contact">
+        <div><span>⌖</span><span><strong>Visit us</strong><br>Sample address, Dhaka, Bangladesh</span></div>
+        <div><span>◷</span><span><strong>Opening hours</strong><br>Sat–Thu · 10:00 AM–8:00 PM<br>Friday · By appointment</span></div>
+        <div><span>✉</span><span><strong>Contact</strong><br>Replace with verified phone and email</span></div>
+      </div>
+      <div class="map-placeholder"><div><strong>⌖ Find us in Dhaka</strong>Google Maps location placeholder<br>Replace with the verified salon map embed.</div></div>
+    </div>
+    <form class="form-card" id="bookingForm">
+      <div class="eyebrow" style="margin-bottom:17px">Appointment request</div>
+      <div class="form-grid">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required></div>
+        <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" placeholder="Your phone number" required></div>
+        <div class="field"><label for="service">Choose a service</label><select id="service" name="service" required><option value="">Select service</option><option>Haircut</option><option>Hair styling</option><option>Facial care</option><option>Makeup</option></select></div>
+        <div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date" required></div>
+        <div class="field full"><label for="message">Anything else? (optional)</label><textarea id="message" name="message" placeholder="Preferred time or special request"></textarea></div>
+      </div>
+      <button class="btn rose" type="submit">Request appointment ↗</button>
+      <p class="form-note">Demo only: submitting displays a preview; no data is transmitted or saved.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div><a class="brand" href="#home" style="color:white">maison <span>bloom.</span></a><p>A beauty salon website concept · Dhaka, Bangladesh</p></div><div class="footer-links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#booking">Contact</a></div><p>© <span id="year"></span> Demo concept</p></div></footer>
+<button class="wa" id="waButton" type="button" aria-label="WhatsApp contact">◉ WhatsApp</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const toast=document.getElementById('toast');
+function showToast(message){toast.textContent=message;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),5000)}
+document.getElementById('bookingForm').addEventListener('submit',function(e){e.preventDefault();const d=new FormData(this);showToast('DEMO PREVIEW — '+d.get('name')+' requested '+d.get('service')+' on '+d.get('date')+'. No information was sent or saved. Connect a booking service before launch.');});
+document.getElementById('waButton').addEventListener('click',()=>showToast('WhatsApp demo button: add the salon’s verified WhatsApp number before launch.'));
+</script>
+</body>
+</html>
